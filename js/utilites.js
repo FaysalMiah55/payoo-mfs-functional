@@ -11,3 +11,13 @@ function getTextFieldValueById(id){
     const textNumber = parseFloat(textValue)
     return textNumber
 }
+
+// toggle button field
+function showSectionById(id){
+    // hide all section id
+    document.getElementById("add-money-form").classList.add('hidden')
+    document.getElementById("cash-out-form").classList.add('hidden')
+    document.getElementById("transaction-form").classList.add('hidden')
+    // show the selected section
+    document.getElementById(id).classList.remove('hidden')
+}
