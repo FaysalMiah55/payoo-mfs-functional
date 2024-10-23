@@ -2,9 +2,18 @@
 document.getElementById("btn-add-money")
     .addEventListener('click', function(event){
         event.preventDefault()
-        console.log("add money");
 
         const addMoney = getInputFieldValueById("input-money")
         const pinNumber = getInputFieldValueById("input-pin-number")
-        console.log(addMoney, pinNumber);
+
+        if(pinNumber === 1234){
+            // add money
+            const balance = getTextFieldValueById("account-balance") 
+            const newBalance = balance + addMoney
+
+            document.getElementById("account-balance").innerText = newBalance
+        }
+        else{
+            alert("wrong pin! failed to add money")
+        }
     })
