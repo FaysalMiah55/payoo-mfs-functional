@@ -23,9 +23,42 @@
                         </div>
                     </div>
                     <div class="divider"></div>
+                    <!-- features start -->
+                    <div>
+                        <!-- add money -->
+                        <button class="btn btn-lg">Add Money</button>
+                        <!-- cash out -->
+                        <button class="btn btn-lg">Cash Out</button>
+                    </div>
+                    <!-- features end -->
+                    <div class="divider"></div>
+                    <!-- add money start -->
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                <span class="label-text">Add Amount</span>
+                                </label>
+                                <input id="input-money" type="text" placeholder="Enter the amount" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                <span class="label-text">Pin</span>
+                                </label>
+                                <input id="input-pin-number" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- add money end -->
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="js/utilites.js"></script>
+    <script src="js/addMoney.js"></script>
 </body>
 </html>
